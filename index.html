@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Jithendra</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#services" >Services</a>
+            <a href="#education" >Education</a>
+            <a href="#skills" >Skills</a>
+            <a href="#projects" >projects</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+        <div class="dark-mode"onclick="lightDarkMode()"><i class="fa-solid fa-moon"></i></div>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="Jithendra.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Jithendra</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I'm Jithendra Gudidha, a passionate and skilled developer with expertise in Python, Java, Data Structures & Algorithms (DSA), and web development. I love building innovative projects, from AI-powered chatbots to full-stack web applications. With certifications in Python and Java, I continuously enhance my skills to solve complex problems efficiently. Currently, I'm working on AI-based face recognition and chatbot applications while strengthening my DSA proficiency. I thrive on learning, collaborating, and bringing impactful ideas to life.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building modern, responsive, and dynamic websites using the latest technologies.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>Developing AI-powered solutions like chatbots and face recognition systems.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-terminal"></i>
+                <h3>Software Development</h3>
+                <p>Creating custom software solutions tailored to business and client needs.</p>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container">
+            <div class="edu-item">
+                <h3>Bachelor’s in Computer Science</h3>
+                <p>XYZ University | 2020 - 2024</p>
+            </div>
+            <div class="edu-item">
+                <h3>High School</h3>
+                <p>ABC School | 2018 - 2020</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <h3>AI-Based Face Recognition</h3>
+                <p>A prototype for detecting and recognizing faces using AI and online databases.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Chatbot for Mental Health</h3>
+                <p>An AI-powered chatbot that provides mental health support using sentiment analysis.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing skills, projects, and contact information.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-info">
+        <p>Email: jithendra@example.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</section>
+    <script>
+        function lightDarkMode(){
+            const darkMode=document.querySelector(".dark-mode i")
+            const elements=document.querySelectorAll("body,section, nav a")
+
+            darkMode.classList.toggle("fa-sun")
+            darkMode.classList.toggle("fa-moon")
+            darkMode.style.color=darkMode.classList.contains("fa-moon")?"while":"black";
+
+            elements.forEach(element=>
+            element.classList.toggle("dark-mode-class")
+            );
+        }
+    </script>
+</body>
+</html>
